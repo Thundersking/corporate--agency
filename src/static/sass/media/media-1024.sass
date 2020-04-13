@@ -1,0 +1,89 @@
+@media (max-width:1024px)
+	
+	.skills-item
+		grid-template-areas: 'a b b c' 'd d e e'
+		justify-content: inherit
+
+	.blog
+		&-title
+			padding-top: 0
+	.header
+		&-subtitle
+			font-size: 20px
+		&-title 
+			max-width: 650px
+			font-size: 50px
+	body.lock
+		overflow: hidden
+
+	.header
+		&__logo 
+			flex: 0 0 40px
+		&__link 
+			font-size: 24px
+			padding-left: 0
+		&__list 
+			display: flex
+			flex-direction: column
+			margin: 0 auto
+			padding: 0
+			& li
+				margin: 0px 0px 20px 0px
+		&__menu 
+			position: fixed
+			top: -150%
+			left: 0
+			width: 100%
+			height: 100%
+			overflow: auto
+			transition: all 0.3s ease 0s
+			padding: 70px 10px 20px 10px
+			&.active
+				top: 0
+				background-color: #000
+				opacity: 0.95
+		&__burger 
+			display: block
+			position: relative
+			width: 30px
+			height: 20px
+			position: relative
+			z-index: 3
+			&.active
+				& span
+					transform: scale(0)
+				&:before
+					transform: rotate(45deg)
+					top: 9px
+				&:after
+					transform: rotate(-45deg)
+					bottom: 9px
+			&:before
+				top: 0
+			&:after
+				bottom: 0
+			& span
+				position: absolute
+				background-color: #fff
+				position: absolute
+				left: 0
+				width: 100%
+				height: 2px
+				top: 9px
+				transition: all 0.3s ease 0s
+
+	.header__burger:before,
+	.header__burger:after
+		content: ''
+		background-color: #fff
+		position: absolute
+		width: 100%
+		height: 2px
+		left: 0
+		transition: all 0.3s ease 0s
+
+	.team-card__desc 
+		& h4
+			font-size: 18px
+		& p 
+			font-size: 13px

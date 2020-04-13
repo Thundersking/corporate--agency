@@ -1,0 +1,36 @@
+@media (max-width:880px)
+	.about
+		&-column 
+			grid-template-areas: 'a' 'b'
+		&-photo
+			height: 330px
+			min-width: none
+			clip-path: none
+		&-text 
+			margin: 0 auto
+			padding: 60px 15px
+
+	.contact
+		&-form
+			grid-template-areas: "a" "b" "c" "d"
+			text-align: center
+			width: 370px
+			&::after 
+				width: 370px
+				margin: 0 auto
+				top: 77%
+				left: 0
+				right: 0
+		&-label 
+			padding: 12px 0px 15px 14px
+			text-align: left
+		&-item
+			&_2
+				margin-left: 0
+			&_4
+				margin: 80px auto 0
+		&-message
+			width: 370px
+
+	.slider .slick-list .slick-track .slider-item
+		height: initial

@@ -1,0 +1,58 @@
+.footer-page
+	.footer-body
+		.wrapper
+			.footer-column
+				.footer-item
+					.footer-logo
+						a.logo.footer-logo_dark(href="#") Mairala
+					.footer-text
+						p 
+							|Duis autem vel eum iriure dolor in hendrerit in 
+							|vulputate velit esse molestie consequat, vel illum 
+							|dolore.
+						p
+							|eugiat nulla facilisis at vero eros et accumsan 
+							|et iusto odio dignissim qui blandit praesent luptatum 
+							|zzril delenit augue duis dolore te feugait nulla facilisi. 
+							|Nam liber tempor cum soluta 
+				.footer-item
+					h3 Recent Posts
+					mixin footer-post(date, name)
+						.footer-post
+							.footer-post__date= date
+							.footer-post__title= name
+							.footer-post__strips
+					+footer-post('March 30, 2014', 'Duis autem vel eum iriure dolor')
+					+footer-post('April 24, 2015', 'Duis autem vel eum iriure dolor')
+					+footer-post('January 12, 2016', 'Duis autem vel eum iriure dolor')
+				.footer-item
+					h3 Twiter Feeds
+					mixin footer-twitter(date, twitter, name)
+						.footer-post
+							.footer-post__date= date
+							.footer-post__post= twitter
+							.footer-post__title= name
+							.footer-post__strips_tw
+					+footer-twitter('about 2 days ago', '@kristianplatt', 'Good work buddy')
+					+footer-twitter('about 2 days ago', '@fasteven', 'Good work buddy')
+					+footer-twitter('about 2 days ago', '@streamer', 'Good work buddy')
+				.footer-item
+					h3 Our Address
+					p.footer-desc_address
+						|Investigationes demonstraverunt lectores legere me lius quod 
+						|ii legunt saepius. Claritas est etiam processus dynamicus,
+						|luptatum zzril delenit augue duis dolore te feugait nulla 
+						|facilisi. Nam liber tempor cum soluta 
+					.footer-contact
+						.footer-contact__location
+							i(class="fas fa-map-marker-alt")
+							p Moonshine St. 14/05 Light, Jupiter
+						.footer-contact__phone
+							i(class="fas fa-phone-alt")
+							p +00 (123) 456 78 90
+						.footer-contact__mail
+							i(class="fas fa-envelope")
+							p first.last@email.com
+	.footer-copyright
+		.wrapper
+			p.footer-copyright__desc ©2014 Imran Khan All Rights Reserved

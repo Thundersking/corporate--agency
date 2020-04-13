@@ -1,0 +1,35 @@
+@media (max-width:1200px)
+	.footer-column 
+		grid-template-areas: 'a d''b c'
+		justify-content: center
+		grid-template-columns: none
+		grid-gap: 60px
+
+	.blog
+		&-item
+			flex-direction: column
+			&__text
+				max-width: 470px
+			&__img
+				padding-right: 0
+				margin-bottom: 20px
+				&_inversion
+					padding-right: 0
+					margin-bottom: 20px
+			&__desc
+				padding-right: 0
+				&_inversion
+					margin-right: 0
+			&_inversion
+				flex-direction: column
+			&__desc
+				&_inversion
+					text-align: left
+					padding-left: 0
+			&__strips
+				display: none
+				&_inversion
+					display: none
+		&-content 
+			margin: 80 auto 10px
+			max-width: 475px

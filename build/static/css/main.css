@@ -248,8 +248,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 122px;
-  margin: 0 auto; }
+  width: 122px; }
   .about-button__link {
     margin: 0; }
 
@@ -1123,6 +1122,8 @@
     line-height: 37px; }
   p.description {
     font-size: 14px; }
+  .about-button {
+    margin: 0 auto; }
   .project-button {
     margin-top: 40px; }
   .project-desc {

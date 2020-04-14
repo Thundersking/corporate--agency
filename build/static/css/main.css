@@ -751,7 +751,8 @@
     font-weight: bold;
     line-height: 24.98px;
     letter-spacing: 0.9px;
-    background-color: #fff0; }
+    background-color: #fff0;
+    cursor: pointer; }
 
 .footer-body {
   padding: 64px 0 35px;

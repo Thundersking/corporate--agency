@@ -149,22 +149,27 @@
       font-family: 'Raleway';
       font-weight: 500; }
   .header-button {
-    display: inline-block;
-    padding: 20px 61px 22px 69px;
+    display: flex;
+    padding: 15px 58px 15px 70px;
     background-color: #272421;
     border-radius: 4px;
-    width: 135px; }
+    width: 135px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; }
     .header-button__link {
       font-family: Raleway;
       font-size: 16px;
       letter-spacing: 1.6px;
       text-decoration: none;
       text-transform: uppercase;
-      color: #ffffff; }
+      color: #ffffff;
+      margin: 0; }
     .header-button i {
       color: #fff;
       font-size: 14px;
-      padding-left: 13px; }
+      padding-left: 13px;
+      height: 18px; }
 
 .logo {
   width: 157px;
@@ -238,8 +243,15 @@
   margin-bottom: 29px; }
 
 .about-button {
-  display: inline-block;
-  padding: 8px 25px 8px 20px; }
+  display: flex;
+  padding: 8px 22px 8px 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 122px;
+  margin: 0 auto; }
+  .about-button__link {
+    margin: 0; }
 
 .services-body {
   margin-top: 85px; }
@@ -402,13 +414,16 @@
       text-decoration: none; }
 
 .project-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 125px;
   height: 33px;
   margin: 0 auto;
   text-align: center;
   margin-top: 90px;
-  padding: 10px 18px 6px 25px; }
+  padding: 10px 18px 6px 25px;
+  text-decoration: none; }
 
 .team-body {
   background-color: #f5f5f5; }
@@ -419,7 +434,7 @@
 
 .team-title p {
   max-width: 469px;
-  margin: 105px auto 81px; }
+  margin: 105px auto 50px; }
 
 .team-people {
   display: flex; }
@@ -659,84 +674,85 @@
 #blog-button {
   display: none; }
 
-.contact-page {
-  background-color: #f5f5f5;
-  padding: 78px 0;
-  margin-top: 92px; }
-
-.contact-title {
-  margin-top: inherit; }
-  .contact-title::after {
-    content: none; }
-
-.contact-item {
-  max-width: 100%; }
-  .contact-item_1 {
-    grid-area: a; }
-  .contact-item_2 {
-    grid-area: b;
-    margin-left: 27px; }
-  .contact-item_3 {
-    grid-area: c; }
-  .contact-item_4 {
-    grid-area: d;
-    margin: 120px auto 0; }
-
-.contact-block {
-  position: relative; }
-
-.contact-form {
-  width: 775px;
-  margin: 77px auto 0;
-  display: grid;
-  grid-gap: 7px;
-  grid-template-areas: "a b" "c c" "d d"; }
-  .contact-form::after {
-    content: '';
-    position: absolute;
-    border: 1px solid #242424;
-    width: 764px;
-    margin: 0 auto;
-    top: 77%; }
-
-.contact-fill {
-  border: none;
-  border-bottom: 4px solid #242424;
-  outline: none;
-  background: none;
-  max-width: 100%; }
-
-.contact-name {
-  width: 370px; }
-
-.contact-email {
-  width: 370px; }
-
-.contact-message {
-  width: 775px; }
-
-.contact-label {
-  display: flex;
-  flex-direction: column;
-  color: #5b5b5b;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24.98px;
-  letter-spacing: 1.76px;
-  padding: 13px 0 15px 17px; }
-
-.contact-button input {
-  width: 170px;
-  height: 45px;
-  border: 2px solid #000000;
-  color: #000000;
-  font-family: "Raleway";
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 24.98px;
-  letter-spacing: 0.9px;
-  background-color: #fff0; }
+.contact {
+  /* &-label
+		display: flex
+		flex-direction: column
+		color: #5b5b5b
+		font-family: "Open Sans"
+		font-size: 16px
+		font-weight: 400
+		line-height: 24.98px
+		letter-spacing: 1.76px
+		padding: 13px 0 15px 17px */ }
+  .contact-page {
+    background-color: #f5f5f5;
+    padding: 78px 0;
+    margin-top: 92px; }
+  .contact-title {
+    margin-top: inherit; }
+    .contact-title::after {
+      content: none; }
+  .contact-item {
+    max-width: 100%; }
+    .contact-item_1 {
+      grid-area: a; }
+    .contact-item_2 {
+      grid-area: b;
+      margin-left: 27px; }
+    .contact-item_3 {
+      grid-area: c;
+      margin-top: 20px; }
+    .contact-item_4 {
+      grid-area: d;
+      margin: 120px auto 0; }
+  .contact-block {
+    position: relative; }
+  .contact-form {
+    width: 775px;
+    margin: 96px auto 0;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-areas: "a b" "c c" "d d"; }
+    .contact-form::after {
+      content: '';
+      position: absolute;
+      border: 1px solid #242424;
+      width: 764px;
+      margin: 0 auto;
+      top: 77%; }
+  .contact-fill {
+    border: none;
+    border-top: 4px solid #242424;
+    outline: none;
+    background: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #5b5b5b;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.98px;
+    letter-spacing: 1.76px;
+    padding: 13px 0 15px 17px; }
+  .contact-name {
+    width: 370px; }
+  .contact-email {
+    width: 370px; }
+  .contact-message {
+    width: 775px; }
+  .contact-button input {
+    width: 170px;
+    height: 45px;
+    border: 2px solid #000000;
+    color: #000000;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24.98px;
+    letter-spacing: 0.9px;
+    background-color: #fff0; }
 
 .footer-body {
   padding: 64px 0 35px;
@@ -1078,7 +1094,9 @@
     height: 1500px;
     align-items: center; }
   .team-card {
-    max-width: none; } }
+    max-width: none; }
+  .blog-title .description {
+    margin: 80px auto 0px; } }
 
 @media (max-width: 600px) {
   .header-title {
@@ -1101,7 +1119,8 @@
 
 @media (max-width: 414px) {
   .heading-second {
-    font-size: 26px; }
+    font-size: 26px;
+    line-height: 37px; }
   p.description {
     font-size: 14px; }
   .project-button {
@@ -1112,6 +1131,9 @@
     font-size: 14px;
     line-height: 30px;
     margin: 15px 10px; }
+  .project-subtitle {
+    padding-top: 0;
+    padding-bottom: 57px; }
   .contact-name {
     width: 290px; }
   .contact-email {
@@ -1145,6 +1167,34 @@
     padding: 0px 0px 50px 0px; }
   .slider .slick-list .slick-track .slider-item h3 {
     font-size: 16px; } }
+
+@media (max-width: 320px) {
+  .header-title {
+    font-size: 32px;
+    line-height: 55px;
+    margin-bottom: 40px; }
+  .header-subtitle {
+    font-size: 16px; }
+  .skills-feature__body::after {
+    top: 44%;
+    left: 45%; }
+  .heading-second::after {
+    margin-top: 30px; }
+  .heading-third {
+    font-size: 20px; }
+  .project-desc p {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 15px auto 0; }
+  .project-img__rectangle h4 {
+    font-size: 14px; }
+    .project-img__rectangle h4::after {
+      margin: 7px auto; }
+  .project-img__rectangle p {
+    font-size: 12px;
+    margin: 0; }
+  .team-people {
+    height: 1200px; } }
 
 h1 {
   max-width: 850px;
